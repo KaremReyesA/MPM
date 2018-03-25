@@ -1,0 +1,13 @@
+/* Standart LogIn ---------------------------- */
+#welcome {
+	position: absolute;
+	top: 85px;
+	right: 10px;
+	color: #464646;
+  font-size: 13px;
+}
+#welcome a {
+	color: #289DCC;
+	text-decoration: none;
+
+}

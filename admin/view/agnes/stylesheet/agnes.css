@@ -1,0 +1,1144 @@
+/* 
+// ----------------------------------------------------------------------------
+// Agnes Theme Version 1.0 For support: http://themeforest.net/user/upixel
+// ----------------------------------------------------------------------------
+*/
+body,
+td,
+th,
+input,
+select,
+textarea,
+option,
+optgroup {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    color: #333333;
+}
+/* General styles ---------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .01);
+}
+h3 { color: #50535A }
+h4 { color: #8E8E8E }
+p {
+    margin: 10px 0px 10px 0px;
+    font-size: 13px;
+}
+a,
+a:visited,
+a b,
+a:hover {
+    color: #38B0E3;
+    text-decoration: none;
+    cursor: pointer;
+}
+input[type='text'],
+textarea,
+select {
+    background: #FFF url('../images/upixel/input.png') top repeat-x;
+    border: 1px solid #DBDEE1;
+    padding: 7px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+textarea:hover {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+textarea:focus {
+    box-shadow: 0 0 5px rgba(224, 34, 34, 1);
+    -webkit-box-shadow: 0 0 5px rgba(224, 34, 34, 1);
+    -moz-box-shadow: 0 0 5px rgba(224, 34, 34, 1);
+    border: 1px solid #e04c4c;
+}
+input:hover {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+input:focus {
+    box-shadow: 0 0 5px rgba(224, 34, 34, 1);
+    -webkit-box-shadow: 0 0 5px rgba(224, 34, 34, 1);
+    -moz-box-shadow: 0 0 5px rgba(224, 34, 34, 1);
+    border: 1px solid #e04c4c;
+		outline:none;
+}
+#container {
+    background: #E7E7E8 url('../images/upixel/box.png') repeat-y;
+    min-width: 980px;
+}
+/* Main Container -------------------- */
+#main-container {
+    margin-left: 250px;
+    padding: 10px 10px 90px 10px;
+    min-height: 555px;
+    height: 100%;
+}
+/* Logo ------------------------------- */
+#logo_box {
+    position: absolute;
+    width: 250px;
+    height: 62px;
+    background: url('../images/upixel/log.png') bottom left repeat-x;
+}
+#logo {
+    height: 25px;
+    padding-top: 33px;
+    background: url('../images/upixel/logo.png') center center no-repeat;
+}
+/* Header Bar ---------------------------- */
+#header_bar {
+    height: 63px;
+    background: transparent url('../images/upixel/header_bar.png') top center repeat-x;
+}
+#header_bar  #save_button {
+    float: right;
+    padding: 10px 10px;
+}
+#header_bar  #info {
+    margin: 14px 5px;
+    width: 24px;
+    height: 24px;
+    float: right;
+    background: transparent url('../images/upixel/info.png') top center no-repeat;
+}
+.fixed {
+    position: fixed;
+    top: -1px;
+    left: 0;
+    width: 100%;
+}
+/* Tab container ----------------------- */
+#tab-container {
+    float: left;
+    min-height: 580px;
+    height: 100%;
+    width: 250px;
+    background: #202022 url('../images/upixel/box.png') repeat-y;
+    padding-top: 11px;
+}
+#tab-container ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align: left;
+}
+#tab-container ul li {
+    width: auto;
+    border-bottom: 1px solid #111111;
+}
+#tab-container ul li  + li { border-top: 1px solid #333335 }
+#tab-container ul li a,
+#tab-container ul li a:visited {
+    text-decoration: none;
+    color: #757575;
+    padding: 10px 0px 10px 20px;
+    padding-right: 12px;
+    display: block;
+    font-size: 14px;
+    text-shadow: 0px 1px #000;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+#tab-container ul li a:hover { color: #E6E6E6 }
+#tab-container ul li a.selected {
+    color: #FFF;
+    background: url('../images/upixel/selected_tab.png') left center no-repeat;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    text-shadow: 0px 1px #555555;
+}
+/* Box Container --------------------- */
+.box {
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #DBDEE1;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+.box .box-heading {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #373E48;
+    letter-spacing: 1px;
+    padding: 10px 0px 10px 10px;
+    background: #FFF url('../images/upixel/box_h.png') repeat;
+    border-bottom: 1px solid #DBDEE1;
+    text-shadow: 1px 1px #FAFAFA;
+}
+.box .box-content {
+    background-color: #FFF;
+    padding: 10px;
+    overflow: auto;
+    border-top: 1px solid #FFF;
+}
+/* Table Red ------------------------- */
+table.red {
+    width: 100%;
+    overflow: auto;
+    background: #FFF;
+    border-left: 3px solid #E02222;
+    border-top: 1px solid #DBDEE1;
+    border-right: 1px solid #DBDEE1;
+    border-bottom: 1px solid #DBDEE1;
+    margin-bottom: 10px;
+}
+table.red > tbody > tr > td { padding: 10px }
+table.red > tbody > tr > td.h3 {
+    width: 300px;
+    color: #50535A;
+    font-size: 14px;
+}
+/* Table Yellow ---------------------- */
+table.yellow {
+    width: 100%;
+    overflow: auto;
+    background: #FFF;
+    border-left: 3px solid #FFB848;
+    border-top: 1px solid #DBDEE1;
+    border-right: 1px solid #DBDEE1;
+    border-bottom: 1px solid #DBDEE1;
+    margin-bottom: 10px;
+}
+table.yellow > tbody > tr > td { padding: 10px }
+table.yellow > tbody > tr > td.h3 {
+    width: 300px;
+    color: #50535A;
+    font-size: 14px;
+}
+/* Table Blue ------------------------ */
+table.blue {
+    width: 100%;
+    overflow: auto;
+    background: #FFF;
+    border-left: 3px solid #0DA3E2;
+    border-top: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 10px;
+}
+table.blue > tbody > tr > td { padding: 10px }
+table.blue > tbody > tr > td.h3 {
+    width: 300px;
+    color: #50535A;
+    font-size: 14px;
+}
+table.blue > tbody > tr > td.center { text-align: center }
+/* Table Clear ----------------------- */
+table.clear {
+    width: 100%;
+    overflow: auto;
+    background: #FFF;
+    border: 1px solid #EEEEEE;
+    margin-bottom: 10px;
+}
+table.clear > tbody > tr > td { padding: 10px }
+table.clear > tbody > tr > td.h3 {
+    width: 300px;
+    color: #50535A;
+    font-size: 14px;
+}
+table.clear > tbody > tr > td.center { text-align: center }
+/* Other ----------------------------- */
+.selected_image {
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+    width: 122px;
+    height: 122px;
+}
+.left-margin { margin-left: 10px }
+.splitter {
+    clear: both;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.note {
+    color: #666666;
+    padding: 15px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -khtml-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    background-color: #FFF5CC;
+    text-align: center;
+    border: 1px solid #F7E9B0;
+}
+.note_white {
+    color: #666666;
+    display: block;
+    text-align: center;
+}
+/* button ---------------------------- */
+a.button {
+    color: #FFFFFF;
+    background: url('../images/upixel/button/button.png') top left repeat-x;
+    border: 1px solid #2B63A6;
+    text-shadow: 0 1px 0 #116292;
+    line-height: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -khtml-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+}
+a.button span {
+    color: #FFFFFF;
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 11px 3px 11px;
+}
+a.button:hover,
+a.button:focus {
+    background: url('../images/upixel/button/button-active.png') repeat-x;
+    text-shadow: 0 1px 0 #D56704;
+    border: 1px solid #DD5402;
+    -moz-box-shadow: inset 0px 0px 10px 0px #DD5402;
+    -webkit-box-shadow: inset 0px 0px 10px 0px #DD5402;
+    box-shadow: inset 0px 0px 10px 0px #DD5402;
+}
+/* Tabs ------------------------------ */
+.horizontal-tabs {
+    padding: 0px 0px 0px 10px;
+    height: 40px;
+    line-height: 21px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #0DA3E2;
+}
+.horizontal-tabs a {
+    background: #F4F4F4;
+    padding: 12px 20px 7px 20px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 4px;
+    display: none;
+}
+.horizontal-tabs a:hover {
+    background: #0DA3E2;
+    color: #FFF;
+}
+.horizontal-tabs a.selected {
+    padding-bottom: 7px;
+    background: #0DA3E2;
+    color: #FFF;
+}
+/* Other Tabs ------------------------ */
+.other-tabs {
+    padding: 0px 10px 10px 0px;
+    height: 40px;
+    line-height: 21px;
+}
+.other-tabs a {
+    background: #FFF;
+    padding: 10px 20px 7px 20px;
+    margin-bottom: 10px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 4px;
+    display: none;
+}
+.other-tabs a:hover {
+    background: #0DA3E2;
+    color: #FFF;
+}
+.other-tabs a.selected {
+    padding-bottom: 7px;
+    background: #0DA3E2;
+    color: #FFF;
+}
+/* Go Up button ---------------------- */
+#go_up_block {
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+}
+#go_up {
+    margin-left: auto;
+    margin-right: auto;
+    width: 96px;
+    height: 35px;
+    border: 1px solid #DBDEE1;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: transparent url('../images/upixel/w_50.png') repeat;
+}
+#go_up:hover {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+#go_up a {
+    display: block;
+    height: 35px;
+    background: transparent url('../images/upixel/go_arrow_up.png') center center no-repeat;
+}
+/* Color picker ---------------------- */
+.colorpicker input {
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 0;
+}
+.color {
+    float: left;
+    top: 3px;
+    margin-right: 5px;
+    width: 31px;
+    height: 31px;
+    background: url('../images/upixel/select.png') center center no-repeat;
+}
+/* Page layout // Start ------------------- */
+#standart {
+    background: url('../images/upixel/page_layout/standart.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#midle {
+    background: url('../images/upixel/page_layout/1300px.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#full {
+    background: url('../images/upixel/page_layout/full.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#custom {
+    background: url('../images/upixel/page_layout/custom.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#margin_top_bottom {
+    background: url('../images/upixel/page_layout/margin_top_bottom.png') center center no-repeat;
+    min-width: 69px;
+    height: 94px;
+    padding: 10px;
+}
+#margin_left_right {
+    background: url('../images/upixel/page_layout/margin_left_right.png') center center no-repeat;
+    min-width: 75px;
+    height: 88px;
+    padding: 10px;
+}
+#shadow {
+    background: url('../images/upixel/page_layout/shadow.png') center center no-repeat;
+    min-width: 97px;
+    height: 106px;
+    padding: 10px;
+}
+/* Page layout // End --------------------- */
+/* Background // Start -------------------- */
+/* //////////////////////////////////////// */
+/* Background // End ---------------------- */
+/* Body // Start -------------------------- */
+#body {
+    background: url('../images/upixel/body/body.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#body_border {
+    background: url('../images/upixel/body/body_border.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+/* Body // End ---------------------------- */
+/* Block // Start ------------------------- */
+#left_block {
+    background: url('../images/upixel/block/left_block.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#left_block_border {
+    background: url('../images/upixel/block/left_block_border.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#middle_block {
+    background: url('../images/upixel/block/middle_block.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#middle_block_border {
+    background: url('../images/upixel/block/middle_block_border.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#right_block {
+    background: url('../images/upixel/block/right_block.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#right_block_border {
+    background: url('../images/upixel/block/right_block_border.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+/* Block // End --------------------------- */
+/* Column // Star ------------------------- */
+/* Column Settings -------------------- */
+#column_left {
+    background: url('../images/upixel/column/left.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#column_center {
+    background: url('../images/upixel/column/center.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+#column_right {
+    background: url('../images/upixel/column/right.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+/* Column // End --------------------------- */
+/* Production box Settings // Start ------- */
+#box_a {
+    background: url('../images/upixel/box/box_a.jpg') center center no-repeat;
+    min-width: 212px;
+    height: 292px;
+    padding: 10px;
+}
+#box_a_shadow {
+    background: url('../images/upixel/box/box_a_shadow.jpg') center center no-repeat;
+    min-width: 235px;
+    height: 315px;
+    padding: 10px;
+}
+#box_border_color {
+    background: url('../images/upixel/box/border_line.png') center center no-repeat;
+    min-width: 210px;
+    height: 3px;
+    padding: 10px;
+}
+#box_a_buttons {
+    background: url('../images/upixel/box/box_a_buttons.jpg') center center no-repeat;
+    min-width: 212px;
+    height: 37px;
+    padding: 10px;
+}
+#box_a_standart_buttons {
+    background: url('../images/upixel/box/standart-button.png') center center no-repeat;
+    min-width: 137px;
+    height: 55px;
+    padding: 10px;
+}
+/* Production box Settings // End --------- */
+/* Header Settings // Start --------------- */
+/* Header Size ------------------------ */
+#header_size {
+    background: url('../images/upixel/header/header.png') center center no-repeat;
+    min-width: 69px;
+    height: 88px;
+    padding: 10px;
+}
+/* Shopping basket -------------------- */
+#s_cart {
+    background: url('../images/upixel/header/cart_standart.png') center center no-repeat;
+    min-width: 192px;
+    height: 40px;
+    padding: 10px;
+}
+#h_cart {
+    background: url('../images/upixel/header/cart_hyperlink.png') center center no-repeat;
+    min-width: 156px;
+    height: 29px;
+    padding: 10px;
+}
+#m_cart {
+    background: url('../images/upixel/header/cart_mini.png') center center no-repeat;
+    min-width: 126px;
+    height: 43px;
+    padding: 10px;
+}
+/* Search ----------------------------- */
+#s_search {
+    background: url('../images/upixel/header/search_standart.png') center center no-repeat;
+    min-width: 185px;
+    height: 28px;
+    padding: 10px;
+}
+#m_search {
+    background: url('../images/upixel/header/search_medium.png') center center no-repeat;
+    min-width: 134px;
+    height: 28px;
+    padding: 10px;
+}
+#mi_search {
+    background: url('../images/upixel/header/search_mini.png') center center no-repeat;
+    min-width: 29px;
+    height: 28px;
+    padding: 10px;
+}
+/* LogIn ------------------------------ */
+#s_login {
+    background: url('../images/upixel/header/login_standart.png') center center no-repeat;
+    min-width: 305px;
+    height: 17px;
+    padding: 10px;
+}
+#mi_login {
+    background: url('../images/upixel/header/login_mini.png') center center no-repeat;
+    min-width: 29px;
+    height: 30px;
+    padding: 10px;
+}
+/* Header Button Color ---------------- */
+#heder_button {
+    background: url('../images/upixel/header/header_2.png') center center no-repeat;
+    min-width: 208px;
+    height: 28px;
+    padding: 10px;
+}
+/* Header Social Network ---------------- */
+#heder_soc_icons {
+    background: url('../images/upixel/header/header_soc.png') center center no-repeat;
+    min-width: 363px;
+    height: 31px;
+    padding: 10px;
+}
+/* Header Settings // End ----------------- */
+/* Link Settings // Start ----------------- */
+/* Link options // Start ----------------- */
+.link_color {}
+#link_color_patt {
+    background: url('../images/upixel/link/sm_link_patt.jpg') center center no-repeat;
+    min-width: 273px;
+    height: 38px;
+    padding: 10px;
+}
+#link_border {
+    background: url('../images/upixel/link/link_border.png') center center no-repeat;
+    min-width: 273px;
+    height: 41px;
+    padding: 10px;
+}
+#link_sub_border {
+    background: url('../images/upixel/link/link_sub_border_color.jpg') center center no-repeat;
+    min-width: 175px;
+    height: 73px;
+    padding: 10px;
+}
+.link_sub_color {
+    background: url('../images/upixel/link/link_sub_color.png') center center no-repeat;
+    min-width: 160px;
+    height: 66px;
+    padding: 10px;
+}
+#link_sub_image {
+    background: url('../images/upixel/link/link_sub_image.png') center center no-repeat;
+    min-width: 160px;
+    height: 66px;
+    padding: 10px;
+}
+#link_sub_shadow {
+    background: url('../images/upixel/link/link_sub_shadow.png') center center no-repeat;
+    min-width: 194px;
+    height: 100px;
+    padding: 10px;
+}
+/* Link options // End ------------------- */
+/* Link Activation // Start -------------- */
+#link_align {
+    background: url('../images/upixel/link/link_align.jpg') center center no-repeat;
+    min-width: 483px;
+    height: 38px;
+    padding: 10px;
+}
+#link_text_spacing {
+    background: url('../images/upixel/link/text_spacing.png') center center no-repeat;
+    min-width: 273px;
+    height: 41px;
+    padding: 10px;
+}
+#link_text_sub_spacing {
+    background: url('../images/upixel/link/text_sub_spacing.png') center center no-repeat;
+    min-width: 155px;
+    height: 67px;
+    padding: 10px;
+}
+#home {
+    background: url('../images/upixel/link/link_home.png') center center no-repeat;
+    min-width: 55px;
+    height: 41px;
+    padding: 10px;
+}
+#my_account {
+    background: url('../images/upixel/link/my_account.png') center center no-repeat;
+    min-width: 179px;
+    height: 159px;
+    padding: 10px;
+}
+#information {
+    background: url('../images/upixel/link/information.png') center center no-repeat;
+    min-width: 179px;
+    height: 159px;
+    padding: 10px;
+}
+#extras {
+    background: url('../images/upixel/link/extras.png') center center no-repeat;
+    min-width: 179px;
+    height: 159px;
+    padding: 10px;
+}
+#shopping_cart {
+    background: url('../images/upixel/link/shopping_cart.png') center center no-repeat;
+    min-width: 129px;
+    height: 41px;
+    padding: 10px;
+}
+#checkout {
+    background: url('../images/upixel/link/checkout.png') center center no-repeat;
+    min-width: 96px;
+    height: 28px;
+    padding: 10px;
+}
+#language {
+    background: url('../images/upixel/link/language.png') center center no-repeat;
+    min-width: 150px;
+    height: 115px;
+    padding: 10px;
+}
+#currency {
+    background: url('../images/upixel/link/currency.png') center center no-repeat;
+    min-width: 150px;
+    height: 133px;
+    padding: 10px;
+}
+#search {
+    background: url('../images/upixel/link/search.png') center center no-repeat;
+    min-width: 260px;
+    height: 69px;
+    padding: 10px;
+}
+#shopping_cart_big {
+    background: url('../images/upixel/link/shopping_cart_big.png') center center no-repeat;
+    min-width: 190px;
+    height: 172px;
+    padding: 10px;
+}
+#login {
+    background: url('../images/upixel/link/link_login.png') center center no-repeat;
+    min-width: 97px;
+    height: 41px;
+    padding: 10px;
+}
+/* Link Activation // End ---------------- */
+/* Link Font & Color options // Start ---- */
+#link_text_color {
+    background: url('../images/upixel/link/link_text_color.jpg') center center no-repeat;
+    min-width: 223px;
+    height: 42px;
+    padding: 10px;
+}
+#link_text_color_hover {
+    background: url('../images/upixel/link/link_text_color_hover.jpg') center center no-repeat;
+    min-width: 223px;
+    height: 42px;
+    padding: 10px;
+}
+#link_text_background {
+    background: url('../images/upixel/link/link_text_background.jpg') center center no-repeat;
+    min-width: 203px;
+    height: 42px;
+    padding: 10px;
+}
+#link_text_background_hover {
+    background: url('../images/upixel/link/link_text_background_hover.jpg') center center no-repeat;
+    min-width: 203px;
+    height: 42px;
+    padding: 10px;
+}
+#link_sub_text_color {
+    background: url('../images/upixel/link/link_sub_text_color.jpg') center center no-repeat;
+    min-width: 175px;
+    height: 73px;
+    padding: 10px;
+}
+#link_sub_text_color_hover {
+    background: url('../images/upixel/link/link_sub_text_color_hover.jpg') center center no-repeat;
+    min-width: 175px;
+    height: 73px;
+    padding: 10px;
+}
+#link_text_sub_background_hover {
+    background: url('../images/upixel/link/link_text_sub_background_hover.jpg') center center no-repeat;
+    min-width: 175px;
+    height: 73px;
+    padding: 10px;
+}
+/* Link Font & Color options // End ------ */
+/* Link Settings // End ------------------- */
+/* Menu Settings // Start ----------------- */
+/* Menu options // Start ----------------- */
+#small_menu {
+    background: url('../images/upixel/menu/sm_menu.png') center center no-repeat;
+    min-width: 184px;
+    height: 126px;
+    padding: 10px;
+}
+#big_menu {
+    background: url('../images/upixel/menu/big_menu.png') center center no-repeat;
+    min-width: 400px;
+    height: 141px;
+    padding: 10px;
+}
+#menu_color {
+    background: url('../images/upixel/menu/menu_color.png') center center no-repeat;
+    min-width: 184px;
+    height: 37px;
+    padding: 10px;
+}
+#menu_color_patt {
+    background: url('../images/upixel/menu/sm_menu_patt.png') center center no-repeat;
+    min-width: 184px;
+    height: 37px;
+    padding: 10px;
+}
+#menu_color_sub {
+    background: url('../images/upixel/menu/menu_color_sub.png') center center no-repeat;
+    min-width: 165px;
+    height: 73px;
+    padding: 10px;
+}
+#menu_color_patt_sub {
+    background: url('../images/upixel/menu/sm_menu_patt_sub.png') center center no-repeat;
+    min-width: 167px;
+    height: 72px;
+    padding: 10px;
+}
+#menu_border {
+    background: url('../images/upixel/menu/menu_border.png') center center no-repeat;
+    min-width: 184px;
+    height: 37px;
+    padding: 10px;
+}
+#menu_border_sub {
+    background: url('../images/upixel/menu/menu_border_sub.png') center center no-repeat;
+    min-width: 167px;
+    height: 72px;
+    padding: 10px;
+}
+#menu_shadow {
+    background: url('../images/upixel/menu/menu_shadow.png') center center no-repeat;
+    min-width: 195px;
+    height: 100px;
+    padding: 10px;
+}
+#menu_text_color {
+    background: url('../images/upixel/menu/menu_text_color.png') center center no-repeat;
+    min-width: 184px;
+    height: 37px;
+    padding: 10px;
+}
+#menu_text_color_hover {
+    background: url('../images/upixel/menu/menu_text_color_hover.png') center center no-repeat;
+    min-width: 184px;
+    height: 37px;
+    padding: 10px;
+}
+#menu_sub_text_color {
+    background: url('../images/upixel/menu/menu_sub_text_color.png') center center no-repeat;
+    min-width: 165px;
+    height: 70px;
+    padding: 10px;
+}
+#menu_sub_text_color_hover {
+    background: url('../images/upixel/menu/menu_sub_text_color_hover.png') center center no-repeat;
+    min-width: 165px;
+    height: 70px;
+    padding: 10px;
+}
+#menu_sub_level3_text_color {
+    background: url('../images/upixel/menu/menu_sub_level3_text_color.png') center center no-repeat;
+    min-width: 166px;
+    height: 54px;
+    padding: 10px;
+}
+#menu_sub_level3_text_color_hover {
+    background: url('../images/upixel/menu/menu_sub_level3_text_color_hover.png') center center no-repeat;
+    min-width: 166px;
+    height: 54px;
+    padding: 10px;
+}
+#menu_font_spacing {
+    background: url('../images/upixel/menu/font_spacing.png') center center no-repeat;
+    min-width: 171px;
+    height: 40px;
+    padding: 10px;
+}
+#menu_font_sub_spacing {
+    background: url('../images/upixel/menu/font_sub_spacing.png') center center no-repeat;
+    min-width: 165px;
+    height: 77px;
+    padding: 10px;
+}
+#menu_font_sub_level3_spacing {
+    background: url('../images/upixel/menu/font_sub_level3_spacing.png') center center no-repeat;
+    min-width: 165px;
+    height: 77px;
+    padding: 10px;
+}
+/* Menu options // End ------------------- */
+/* Menu Settings // End ------------------- */
+/* Social Network // Start ----------------- */
+/* Follow Us // Start ----------------- */
+#facebook {
+    background: #3A589B url('../images/upixel/soc_icon/w_facebook.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+#flicker {
+    background: #FF0084 url('../images/upixel/soc_icon/w_flickr.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+#google {
+    background: #DA4936 url('../images/upixel/soc_icon/w_google.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+#instagram {
+    background: #643628 url('../images/upixel/soc_icon/w_instagram.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+#linkedin {
+    background: #005CA0 url('../images/upixel/soc_icon/w_linkedin.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+#pinterest {
+    background: #CA2128 url('../images/upixel/soc_icon/w_pinterest.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+#twitter {
+    background: #32CEFF url('../images/upixel/soc_icon/w_twitter.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+#vimeo {
+    background: #17B2E8 url('../images/upixel/soc_icon/w_vimeo.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+#youtube {
+    background: #C02C2A url('../images/upixel/soc_icon/w_youtube.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+#blogger {
+    background: #F47722 url('../images/upixel/soc_icon/w_blogger.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+#envato {
+    background: #30740B url('../images/upixel/soc_icon/w_envato.png') center center no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -moz-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(119, 119, 119, 0.13);
+}
+/* Follow Us // End ------------------- */
+/* Social Network // End ------------------- */
+/* Footer // Start ------------------- */
+#footer_contact_icons {
+    background: url('../images/upixel/footer/footer_contact_icons.png') center center no-repeat;
+    min-width: 105px;
+    height: 23px;
+    padding: 10px;
+}
+#americanexpress {
+    background: url('../images/upixel/footer/42x42px/americanexpress.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#cirrus {
+    background: url('../images/upixel/footer/42x42px/cirrus.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#delta {
+    background: url('../images/upixel/footer/42x42px/delta.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#dinersclub {
+    background: url('../images/upixel/footer/42x42px/dinersclub.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#directdebit {
+    background: url('../images/upixel/footer/42x42px/directdebit.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#discover {
+    background: url('../images/upixel/footer/42x42px/discover.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#egold {
+    background: url('../images/upixel/footer/42x42px/egold.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#maestro {
+    background: url('../images/upixel/footer/42x42px/maestro.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#mastercard {
+    background: url('../images/upixel/footer/42x42px/mastercard.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#paypal {
+    background: url('../images/upixel/footer/42x42px/paypal.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#solo {
+    background: url('../images/upixel/footer/42x42px/solo.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#switch {
+    background: url('../images/upixel/footer/42x42px/switch.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#visa {
+    background: url('../images/upixel/footer/42x42px/visa.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#visaelectron {
+    background: url('../images/upixel/footer/42x42px/visaelectron.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#westernunion {
+    background: url('../images/upixel/footer/42x42px/westernunion.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#wirecard {
+    background: url('../images/upixel/footer/42x42px/wirecard.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+#worldpay {
+    background: url('../images/upixel/footer/42x42px/worldpay.png') center center no-repeat;
+    min-width: 42px;
+    height: 42px;
+    padding: 10px;
+}
+/* Footer // End --------------------- */
+/* Additional Effects // Start */
+#toltip { background: url('../images/upixel/toltip.png') center center no-repeat;
+    min-width: 81px;
+    height: 32px;
+    padding: 10px;
+}
+#box-slider { background: url('../images/upixel/box_slider.png') center center no-repeat;
+    min-width: 198px;
+    height: 307px;
+    padding: 10px;
+}
+/* Additional Effects // End */

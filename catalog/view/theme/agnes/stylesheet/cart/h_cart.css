@@ -1,0 +1,38 @@
+/* Basket ---------------------------- */
+#header #cart {
+	position: absolute;
+	top: 34px;
+	right: 380px;
+	z-index: 25;
+	min-width: 300px;
+}
+#header #cart .heading {
+	float: right;
+	position: relative;
+	z-index: 1;
+}
+#header #cart .heading .bag {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 34px;
+	width: 50px;
+	background: transparent url('../../image/layout/header/b_cart.png') right no-repeat;
+	-webkit-border-radius: 0px 3px 3px 0px;
+	-moz-border-radius: 0px 3px 3px 0px;
+	-khtml-border-radius: 0px 3px 3px 0px;
+	border-radius: 0px 3px 3px 0px;
+}
+#header #cart .heading a {
+	float: right;
+	color: #474747;
+	height: 25px;
+	text-decoration: none;
+	padding: 7px 60px 0px 15px;
+	border: 1px solid #E7E7E7;
+	background: #FFF url('../../image/layout/search_bg.png') repeat-x;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-khtml-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+}
